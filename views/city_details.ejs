@@ -1,0 +1,19 @@
+<%- include("partials/header") -%>
+
+        <div class="details">
+            <h2><%= city %></h2>
+            <p>Tempreature: <%= temp %> ℃</p>
+            <p>Description: <%= des %></p>
+            <p>Pressure: <%= press %> hPa</p>
+            <p>Humidity: <%= humid %> %</p>
+            <p>Wind speed: <%= windspeed %> m/sec</p>
+            <p>Feels like: <%= feels_like %> ℃</p>
+            <img src="<%= icon %>" />
+            <form>
+                <button type="submit" class="btn btn-primary" href="/city">Back</button>
+                <button type="submit" class="btn btn-primary" ><a href="/">Home</a></button>
+            </form>
+        </div>
+
+
+<%- include("partials/footer") -%>
